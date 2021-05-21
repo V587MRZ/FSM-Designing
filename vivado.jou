@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Sun Apr 18 21:52:32 2021
+# Process ID: 8408
+# Current directory: E:/class/Master of ANU/6213_Digital Systems and Microprocessors/my_6213/lab4/my_own_FSM
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11916 E:\class\Master of ANU\6213_Digital Systems and Microprocessors\my_6213\lab4\my_own_FSM\my_own_FSM.xpr
+# Log file: E:/class/Master of ANU/6213_Digital Systems and Microprocessors/my_6213/lab4/my_own_FSM/vivado.log
+# Journal file: E:/class/Master of ANU/6213_Digital Systems and Microprocessors/my_6213/lab4/my_own_FSM\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {E:/class/Master of ANU/6213_Digital Systems and Microprocessors/my_6213/lab4/my_own_FSM/my_own_FSM.xpr}
+update_compile_order -fileset sources_1

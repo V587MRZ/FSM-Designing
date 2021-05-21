@@ -1,0 +1,28 @@
+r, count);
+      WriteAddr +=  count;
+      pBuffer += count;
+			
+			/*把整数页都写了*/
+      while (NumOfPage--)
+      {
+        SPI_FLASH_PageWrite(pBuffer, WriteAddr, SPI_FLASH_PageSize);
+        WriteAddr +=  SPI_FLASH_PageSize;
+        pBuffer += SPI_FLASH_PageSize;
+      }
+			/*若有多余的不满一页的数据，把它写完*/
+      if (NumOfSingle != 0)
+      {
+        SPI_FLASH_PageWrite(pBuffer, WriteAddr, NumOfSingle);
+      }
+    }
+  }
+}
+
+ /**
+  * @brief  读取FLASH数据
+  * @param 	pBuffer，存储读出数据的指针
+  * @param   ReadAddr，读取地址
+  * @param   NumByteToRead，读取数据长度
+  * @retval 无
+  */
+void SPI_FLASH_BufferRead(uint8_t* pBuffer, uint32_t ReadAddr, uint32
